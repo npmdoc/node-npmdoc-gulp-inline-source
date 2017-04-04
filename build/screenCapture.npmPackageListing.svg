@@ -1,28 +1,28 @@
 <svg height="398" width="720" xmlns="http://www.w3.org/2000/svg">
 <rect height="398" fill="#555" width="720"></rect>
 <text fill="#7f7" font-family="Courier New" font-size="12" xml:space="preserve">
-<tspan x="10" y="26">  0.  2017-04-04 10:35:08 +0000    11251 byte  .</tspan>
-<tspan x="10" y="42">  1.  2017-04-04 10:35:08 +0000     1103 byte  LICENSE</tspan>
-<tspan x="10" y="58">  2.  2017-04-04 10:35:08 +0000     1864 byte  README.md</tspan>
-<tspan x="10" y="74">  3.  2017-04-04 10:35:08 +0000     1251 byte  index.js</tspan>
-<tspan x="10" y="90">  4.  2017-04-04 10:35:08 +0000     2537 byte  package.json</tspan>
-<tspan x="10" y="106">  5.  2017-04-04 10:35:08 +0000      423 byte  test/expected/inlined-image-png.html</tspan>
-<tspan x="10" y="122">  6.  2017-04-04 10:35:08 +0000      198 byte  test/expected/inlined-image-svg.html</tspan>
-<tspan x="10" y="138">  7.  2017-04-04 10:35:08 +0000       96 byte  test/expected/inlined-link.html</tspan>
-<tspan x="10" y="154">  8.  2017-04-04 10:35:08 +0000      187 byte  test/expected/inlined-nominify.html</tspan>
-<tspan x="10" y="170">  9.  2017-04-04 10:35:08 +0000      122 byte  test/expected/inlined-script.html</tspan>
-<tspan x="10" y="186"> 10.  2017-04-04 10:35:08 +0000      192 byte  test/expected/inlined-with-attributes.html</tspan>
-<tspan x="10" y="202"> 11.  2017-04-04 10:35:08 +0000       91 byte  test/fixtures/image-png.html</tspan>
-<tspan x="10" y="218"> 12.  2017-04-04 10:35:08 +0000       93 byte  test/fixtures/image-svg.html</tspan>
-<tspan x="10" y="234"> 13.  2017-04-04 10:35:08 +0000      241 byte  test/fixtures/image.png</tspan>
-<tspan x="10" y="250"> 14.  2017-04-04 10:35:08 +0000      170 byte  test/fixtures/image.svg</tspan>
-<tspan x="10" y="266"> 15.  2017-04-04 10:35:08 +0000      107 byte  test/fixtures/link.html</tspan>
-<tspan x="10" y="282"> 16.  2017-04-04 10:35:08 +0000      150 byte  test/fixtures/nominify.html</tspan>
-<tspan x="10" y="298"> 17.  2017-04-04 10:35:08 +0000      112 byte  test/fixtures/script-relative.html</tspan>
-<tspan x="10" y="314"> 18.  2017-04-04 10:35:08 +0000      100 byte  test/fixtures/script.html</tspan>
-<tspan x="10" y="330"> 19.  2017-04-04 10:35:08 +0000       63 byte  test/fixtures/script.js</tspan>
-<tspan x="10" y="346"> 20.  2017-04-04 10:35:08 +0000       29 byte  test/fixtures/style.css</tspan>
-<tspan x="10" y="362"> 21.  2017-04-04 10:35:08 +0000      181 byte  test/fixtures/with-attributes.html</tspan>
-<tspan x="10" y="378"> 22.  2017-04-04 10:35:08 +0000     1941 byte  test/main.js</tspan>
+<tspan x="10" y="26">  0.  2017-04-04 10:36:29 +0000    11251 byte  .</tspan>
+<tspan x="10" y="42">  1.  2017-04-04 10:36:29 +0000     1103 byte  LICENSE</tspan>
+<tspan x="10" y="58">  2.  2017-04-04 10:36:29 +0000     1864 byte  README.md</tspan>
+<tspan x="10" y="74">  3.  2017-04-04 10:36:29 +0000     1251 byte  index.js</tspan>
+<tspan x="10" y="90">  4.  2017-04-04 10:36:29 +0000     2537 byte  package.json</tspan>
+<tspan x="10" y="106">  5.  2017-04-04 10:36:29 +0000      423 byte  test/expected/inlined-image-png.html</tspan>
+<tspan x="10" y="122">  6.  2017-04-04 10:36:29 +0000      198 byte  test/expected/inlined-image-svg.html</tspan>
+<tspan x="10" y="138">  7.  2017-04-04 10:36:29 +0000       96 byte  test/expected/inlined-link.html</tspan>
+<tspan x="10" y="154">  8.  2017-04-04 10:36:29 +0000      187 byte  test/expected/inlined-nominify.html</tspan>
+<tspan x="10" y="170">  9.  2017-04-04 10:36:29 +0000      122 byte  test/expected/inlined-script.html</tspan>
+<tspan x="10" y="186"> 10.  2017-04-04 10:36:29 +0000      192 byte  test/expected/inlined-with-attributes.html</tspan>
+<tspan x="10" y="202"> 11.  2017-04-04 10:36:29 +0000       91 byte  test/fixtures/image-png.html</tspan>
+<tspan x="10" y="218"> 12.  2017-04-04 10:36:29 +0000       93 byte  test/fixtures/image-svg.html</tspan>
+<tspan x="10" y="234"> 13.  2017-04-04 10:36:29 +0000      241 byte  test/fixtures/image.png</tspan>
+<tspan x="10" y="250"> 14.  2017-04-04 10:36:29 +0000      170 byte  test/fixtures/image.svg</tspan>
+<tspan x="10" y="266"> 15.  2017-04-04 10:36:29 +0000      107 byte  test/fixtures/link.html</tspan>
+<tspan x="10" y="282"> 16.  2017-04-04 10:36:29 +0000      150 byte  test/fixtures/nominify.html</tspan>
+<tspan x="10" y="298"> 17.  2017-04-04 10:36:29 +0000      112 byte  test/fixtures/script-relative.html</tspan>
+<tspan x="10" y="314"> 18.  2017-04-04 10:36:29 +0000      100 byte  test/fixtures/script.html</tspan>
+<tspan x="10" y="330"> 19.  2017-04-04 10:36:29 +0000       63 byte  test/fixtures/script.js</tspan>
+<tspan x="10" y="346"> 20.  2017-04-04 10:36:29 +0000       29 byte  test/fixtures/style.css</tspan>
+<tspan x="10" y="362"> 21.  2017-04-04 10:36:29 +0000      181 byte  test/fixtures/with-attributes.html</tspan>
+<tspan x="10" y="378"> 22.  2017-04-04 10:36:29 +0000     1941 byte  test/main.js</tspan>
 </text>
 </svg>
