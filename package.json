@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"gulp-inline-source",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "gulp-inline-source",
+    "description": "api documentation for [gulp-inline-source (v3.0.0)](https://github.com/fmal/gulp-inline-source#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-inline-source.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-inline-source) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-inline-source.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-inline-source)",
     "devDependencies": {
-        "gulp-inline-source": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "gulp-inline-source": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-gulp-inline-source",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-gulp-inline-source",
+    "keywords": [
+        "documentation",
+        "gulp-inline-source"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_gulp_inline_source.js",
+    "name": "npmdoc-gulp-inline-source",
+    "nameAlias": "npmdoc_gulp_inline_source",
+    "nameOriginal": "npmdoc-gulp-inline-source",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-gulp-inline-source.git"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
