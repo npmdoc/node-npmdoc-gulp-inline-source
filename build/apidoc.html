@@ -51,7 +51,7 @@
 
         href="https://github.com/fmal/gulp-inline-source#readme"
 
-    >gulp-inline-source (v3.0.0)</a>
+    >gulp-inline-source (v3.1.0)</a>
 </h1>
 <h4>Inline flagged js & css sources.</h4>
 <div class="apidocSectionDiv"><a
@@ -61,12 +61,74 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-inline-source">module gulp-inline-source</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-inline-source.gulp-inline-source">
+            function <span class="apidocSignatureSpan"></span>gulp-inline-source
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-inline-source" id="apidoc.module.gulp-inline-source">module gulp-inline-source</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-inline-source.gulp-inline-source" id="apidoc.element.gulp-inline-source.gulp-inline-source">
+        function <span class="apidocSignatureSpan"></span>gulp-inline-source
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function gulpInlineSource(options) {
+    &#x27;use strict&#x27;;
+
+    var stream = through.obj(function (file, enc, cb) {
+        var self = this;
+
+        if (file.isNull() || file.isDirectory()) {
+            this.push(file);
+            return cb();
+        }
+
+        if (file.isStream()) {
+            this.emit(&#x27;error&#x27;, new gutil.PluginError(PLUGIN_NAME, &#x27;Streaming not supported&#x27;));
+            return cb();
+        }
+
+        var fileOptions = {
+          rootpath: path.dirname(file.path),
+          htmlpath: file.path
+        };
+
+        if (options) {
+          for (var i in options) {
+            fileOptions[i] = options[i];
+          }
+        }
+
+        inlineSource(file.contents.toString(), fileOptions, function (err, html) {
+            if (err) {
+                self.emit(&#x27;error&#x27;, new gutil.PluginError(PLUGIN_NAME, err));
+            } else {
+                file.contents = new Buffer(html || &#x27;&#x27;);
+                self.push(file);
+            }
+
+            cb();
+        });
+    });
+
+    return stream;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 

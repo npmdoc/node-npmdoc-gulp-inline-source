@@ -1,4 +1,4 @@
-<div class="apidocDiv">
+<html><head></head><body><div class="apidocDiv">
 <style>
 /*csslint
 */
@@ -47,17 +47,10 @@
 }
 </style>
 <h1>api documentation for
-    <a
-
-        href="https://github.com/fmal/gulp-inline-source#readme"
-
-    >gulp-inline-source (v3.1.0)</a>
+    <a href="https://github.com/fmal/gulp-inline-source#readme">gulp-inline-source (v3.1.0)</a>
 </h1>
-<h4>Inline flagged js & css sources.</h4>
-<div class="apidocSectionDiv"><a
-    href="#apidoc.tableOfContents"
-    id="apidoc.tableOfContents"
-><h1>table of contents</h1></a><ol>
+<h4>Inline flagged js &amp; css sources.</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-inline-source">module gulp-inline-source</a><ol>
 
@@ -86,7 +79,7 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function gulpInlineSource(options) {
-    &#x27;use strict&#x27;;
+    'use strict';
 
     var stream = through.obj(function (file, enc, cb) {
         var self = this;
@@ -97,7 +90,7 @@
         }
 
         if (file.isStream()) {
-            this.emit(&#x27;error&#x27;, new gutil.PluginError(PLUGIN_NAME, &#x27;Streaming not supported&#x27;));
+            this.emit('error', new gutil.PluginError(PLUGIN_NAME, 'Streaming not supported'));
             return cb();
         }
 
@@ -114,9 +107,9 @@
 
         inlineSource(file.contents.toString(), fileOptions, function (err, html) {
             if (err) {
-                self.emit(&#x27;error&#x27;, new gutil.PluginError(PLUGIN_NAME, err));
+                self.emit('error', new gutil.PluginError(PLUGIN_NAME, err));
             } else {
-                file.contents = new Buffer(html || &#x27;&#x27;);
+                file.contents = new Buffer(html || '');
                 self.push(file);
             }
 
@@ -138,3 +131,4 @@
     ]
 </div>
 </div>
+</body></html>
